@@ -1,11 +1,9 @@
-# Welcome to My Zsh
+# Welcome to Zsh
 ***
 
-## Task
-The task was to create a shell.
 
 ## Description
-The shell is implemented as a read-parse-execute loop. User input is received with getline() and parsed by 
+Zsh is a custom Unix shell implemented as a read-parse-execute loop. User input is received with getline() and parsed by 
 splitting on spaces while handling quote marks. If valid, the command is executed as a builtin command, 
 an executable file with a direct path (e.g. ./project) or a binary. For executable files and binaries fork() 
 is used and execve() is called in the child process. 
